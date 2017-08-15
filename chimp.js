@@ -1,5 +1,5 @@
 module.exports = {
-    // - - - - CHIMP - - - -
+  // - - - - CHIMP - - - -
   watch: false,
   watchTags: '@focus',
   watchWithPolling: false,
@@ -13,27 +13,30 @@ module.exports = {
   sync: true,
   offline: false,
 
-    // - - - - CUCUMBER - - - -
-  path: './features',
+  // - - - - CUCUMBER - - - -
+  path: './source/e2e/features',
   format: 'pretty',
   tags: '~@ignore',
   singleSnippetPerFile: true,
   recommendedFilenameSeparator: '_',
-  chai: true,
-    // screenshotsOnError: isCI(),
+  chai: false,
   screenshotsOnError: true,
-  screenshotsPath: '.screenshots',
+  screenshotsPath: './e2e_output/screenshots',
   captureAllStepScreenshots: false,
   saveScreenshotsToDisk: true,
-    // Note: With a large viewport size and captureAllStepScreenshots enabled,
-    // you may run out of memory. Use browser.setViewportSize to make the
-    // viewport size smaller.
-  saveScreenshotsToReport: false,
-  jsonOutput: null,
-    // compiler: 'js:' + path.resolve('babel-register.js'),
+  saveScreenshotsToReport: true,
+  jsonOutput: './e2e_output/cucumber.json',
   conditionOutput: true,
 
-    // - - - - SELENIUM  - - - -
+  // - - - - CUCUMBER REPORT - - - -
+  htmlReport: true,
+  theme: 'bootstrap',
+  jsonFile: './e2e_output/cucumber.json',
+  output: './e2e_output/report/cucumber.html',
+  reportSuiteAsScenarios: true,
+  launchReport: true,
+
+  // - - - - SELENIUM  - - - -
   browser: 'chrome',
   platform: 'ANY',
   name: '',
@@ -41,13 +44,13 @@ module.exports = {
   key: '',
   port: null,
   host: null,
-    // deviceName: null,
+  // deviceName: null,
 
-    // - - - - WEBDRIVER-IO  - - - -
+  // - - - - WEBDRIVER-IO  - - - -
   webdriverio: {
     desiredCapabilities: {},
     logLevel: 'silent',
-        // logOutput: null,
+    // logOutput: null,
     host: '127.0.0.1',
     port: 4444,
     path: '/wd/hub',
@@ -58,49 +61,49 @@ module.exports = {
     waitforInterval: 250,
   },
 
-    // - - - - SELENIUM-STANDALONE
+  // - - - - SELENIUM-STANDALONE
   seleniumStandaloneOptions: {
-        // check for more recent versions of selenium here:
-        // http://selenium-release.storage.googleapis.com/index.html
+    // check for more recent versions of selenium here:
+    // http://selenium-release.storage.googleapis.com/index.html
     version: '2.53.1',
     baseURL: 'https://selenium-release.storage.googleapis.com',
     drivers: {
       chrome: {
-                // check for more recent versions of chrome driver here:
-                // http://chromedriver.storage.googleapis.com/index.html
+        // check for more recent versions of chrome driver here:
+        // http://chromedriver.storage.googleapis.com/index.html
         version: '2.24',
         arch: process.arch,
         baseURL: 'https://chromedriver.storage.googleapis.com',
       },
       ie: {
-                // check for more recent versions of internet explorer driver here:
-                // http://selenium-release.storage.googleapis.com/index.html
+        // check for more recent versions of internet explorer driver here:
+        // http://selenium-release.storage.googleapis.com/index.html
         version: '2.50.0',
         arch: 'ia32',
         baseURL: 'https://selenium-release.storage.googleapis.com',
       },
       firefox: {
-	version: '0.11.1',
-	arch: process.arch,
-	baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
+        version: '0.11.1',
+        arch: process.arch,
+        baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
       },
     },
   },
 
-    // - - - - SESSION-MANAGER  - - - -
+  // - - - - SESSION-MANAGER  - - - -
   noSessionReuse: false,
 
-    // - - - - MOCHA  - - - -
+  // - - - - MOCHA  - - - -
   mocha: true,
-    // mochaTags and mochaGrep only work when watch is false (disabled)
+  // mochaTags and mochaGrep only work when watch is false (disabled)
   mochaTags: '',
   mochaGrep: null,
-    // 'path: './tests',
+  // 'path: './tests',
   mochaTimeout: 60000,
   mochaReporter: 'spec',
   mochaSlow: 10000,
 
-    // - - - - JASMINE  - - - -
+  // - - - - JASMINE  - - - -
   jasmine: false,
   jasmineConfig: {
     specDir: '.',
@@ -114,18 +117,18 @@ module.exports = {
     random: false,
   },
   jasmineReporterConfig: {
-        // This options are passed to jasmine.configureDefaultReporter(...)
-        // See: http://jasmine.github.io/2.4/node.html#section-Reporters
+    // This options are passed to jasmine.configureDefaultReporter(...)
+    // See: http://jasmine.github.io/2.4/node.html#section-Reporters
   },
 
-    // - - - - METEOR  - - - -
+  // - - - - METEOR  - - - -
   ddp: false,
 
-    // - - - - PHANTOM  - - - -
+  // - - - - PHANTOM  - - - -
   phantom_w: 1280,
   phantom_h: 1024,
 
-    // - - - - DEBUGGING  - - - -
+  // - - - - DEBUGGING  - - - -
   log: 'info',
   debug: false,
   seleniumDebug: null,
