@@ -21,7 +21,9 @@ const searchPage = Object.create(page, {
 
   searchFor: {
     value(value) {
+      this.searchField.waitForVisible();
       this.searchField.setValue(value);
+      this.searchBtn.waitForVisible();
       this.searchBtn.click();
       this.searchResults.waitForVisible();
     }
