@@ -6,10 +6,6 @@
     "test": "node node_modules/.bin/chimp",
     "lint": "node node_modules/.bin/eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StephenDavidson/chimp-webdriverio-example.git"
-  },
   "keywords": [
     "chimp",
     "webdriverio",
@@ -17,10 +13,6 @@
   ],
   "author": "Stephen Davidson",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/StephenDavidson/chimp-webdriverio-example/issues"
-  },
-  "homepage": "https://github.com/StephenDavidson/chimp-webdriverio-example#readme",
   "dependencies": {
     "chimp": "^0.41.1"
   },
