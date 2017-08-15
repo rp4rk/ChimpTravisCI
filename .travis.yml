@@ -36,6 +36,7 @@ cache:
 before_script:
     - export DISPLAY=:99.0
     - ./script/travis-build.sh
+    - yarn
 
 script: node ./node_modules/.bin/chimp --browser ${BROWSER}
 
