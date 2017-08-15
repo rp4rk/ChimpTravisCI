@@ -14,7 +14,7 @@ module.exports = {
   offline: false,
 
     // - - - - CUCUMBER - - - -
-  path: './tests',
+  path: './features',
   format: 'pretty',
   tags: '~@ignore',
   singleSnippetPerFile: true,
