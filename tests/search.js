@@ -2,7 +2,7 @@ import searchPage from '../pageobjects/search.page';
 
 describe('Search', () => {
   beforeEach(() => {
-    browser.openUrl('https://www.google.co.uk/')
+    browser.url('https://www.google.co.uk/')
     searchPage.open();
   });
 
