@@ -6,11 +6,11 @@ module.exports = function() {
         browser.url(url);
     });
 
-    this.And(/^I enter "([^"]*)" into the search bar$/, phrase => {
-        SearchPage.searchFor(phrase);
+    this.Then(/^I enter "([^"]*)" into the search bar$/, phrase => {
+        searchPage.searchFor(phrase);
     });
 
-    this.Then(/^$/, () => {
+    this.Then(/^I see pugs$/, () => {
         searchPage.searchResults.getText().should.contain('pug');
     });
 };

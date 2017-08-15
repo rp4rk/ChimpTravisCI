@@ -5,7 +5,7 @@ Feature: Google search
 
     Scenario: Search for pugs
         Given I visit "https://www.google.co.uk/"
-        And I enter "Pugs" into the search bar
+        Then I enter "Pugs" into the search bar
         Then I see pugs
     
     
