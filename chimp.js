@@ -14,7 +14,7 @@ module.exports = {
   offline: false,
 
   // - - - - CUCUMBER - - - -
-  path: './source/e2e/features',
+  path: './features',
   format: 'pretty',
   tags: '~@ignore',
   singleSnippetPerFile: true,
