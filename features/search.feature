@@ -6,7 +6,6 @@ Feature: Google search
     Scenario: Search for pugs
         Given I visit "https://www.google.co.uk/"
         And I enter "Pugs" into the search bar
-        When I press the search button
-        Then I see 
+        Then I see pugs
     
     
