@@ -16,7 +16,7 @@ git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Now let's go have some fun with the cloned repo
-cd e2e_output/report
+cd report
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
