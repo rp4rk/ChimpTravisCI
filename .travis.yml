@@ -47,9 +47,9 @@ before_script:
     - ./script/travis-build.sh
     - yarn
 
-script: node ./node_modules/.bin/chimp --browser ${BROWSER}
-
-after_script: npm run report
+script: 
+  - node ./node_modules/.bin/chimp --browser ${BROWSER}
+  - npm run report
 
 deploy:
   local_dir: './e2e_output/report'
