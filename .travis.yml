@@ -48,7 +48,7 @@ before_script:
     - yarn
 
 script: 
-  - node ./node_modules/.bin/chimp --browser ${BROWSER}
+  - node ./node_modules/.bin/chimp ./chimp.conf.js --browser ${BROWSER}
   - npm run report
 
 deploy:
