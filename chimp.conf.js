@@ -1,9 +1,9 @@
-var gutil           = require('gulp-util');
+// var gutil           = require('gulp-util');
 var portSelenium    = Math.floor(Math.random() * 5000) + 1000;
 var portWebDriverio = Math.floor(Math.random() * 9000) + 1000;
 
-gutil.log('Selenium running in port:    ' + gutil.colors.bold.white.bgBlue(portSelenium));
-gutil.log('WebDriverio running in port: ' + gutil.colors.bold.white.bgBlue(portWebDriverio));
+// gutil.log('Selenium running in port:    ' + gutil.colors.bold.white.bgBlue(portSelenium));
+// gutil.log('WebDriverio running in port: ' + gutil.colors.bold.white.bgBlue(portWebDriverio));
 
 module.exports = {
     // - - - - CHIMP - - - -
