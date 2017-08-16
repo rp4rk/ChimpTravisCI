@@ -1,6 +1,15 @@
 language: node_js
 node_js: "6"
 
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - ENCRYPTION_LABEL: "ae8e44dcec30"
+    - COMMIT_AUTHOR_EMAIL: "ryan.park@unosquare.com"
+
 matrix:
   include:
     - os: linux
@@ -39,6 +48,17 @@ before_script:
     - yarn
 
 script: node ./node_modules/.bin/chimp --browser ${BROWSER}
+
+after_script: npm run report
+
+deploy:
+  local_dir: './e2e_output/report/'
+  provider: pages
+  skip_cleanup: true
+  github_token: $encrypted_ae8e44dcec30_key # Set in travis-ci.org dashboard
+  on:
+    branch: master
+
 
 notifications:
   email:
