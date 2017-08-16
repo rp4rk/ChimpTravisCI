@@ -56,9 +56,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $encrypted_ae8e44dcec30_key # Set in travis-ci.org dashboard
-  on:
-    branch: master
-
 
 notifications:
   email:
