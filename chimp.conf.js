@@ -26,25 +26,25 @@ module.exports = {
     singleRun:  true,
 
     // - - - - CUCUMBER - - - -
-    path: 'features',
+    path: './features',
     format: 'pretty',
     tags: '~@ignore',
     singleSnippetPerFile: true,
     recommendedFilenameSeparator: '_',
     chai: false,
     screenshotsOnError: true,
-    screenshotsPath: 'e2e_output/screenshots',
+    screenshotsPath: './e2e_output/screenshots',
     captureAllStepScreenshots: false,
     saveScreenshotsToDisk: true,
     saveScreenshotsToReport: true,
-    jsonOutput: 'e2e_output/cucumber.json',
+    jsonOutput: './e2e_output/cucumber.json',
     conditionOutput: true,
 
     // - - - - CUCUMBER REPORT - - - -
     htmlReport: true,
     theme: 'hierarchy',
-    jsonFile: 'e2e_output/cucumber.json',
-    output: 'e2e_output/report/index.html',
+    jsonFile: './e2e_output/cucumber.json',
+    output: './e2e_output/report/index.html',
     reportSuiteAsScenarios: true,
     launchReport: true,
 
