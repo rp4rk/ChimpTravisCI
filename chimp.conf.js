@@ -46,7 +46,7 @@ module.exports = {
     jsonFile: './e2e_output/cucumber.json',
     output: './e2e_output/report/index.html',
     reportSuiteAsScenarios: true,
-    launchReport: true,
+    launchReport: false,
 
     // - - - - SELENIUM  - - - -
     browser: 'phantomjs',
