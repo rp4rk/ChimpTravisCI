@@ -19,7 +19,7 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
-      env: BROWSER=chrome
+      env: BROWSER=firefox
     # - os: osx
     #   osx_image: xcode8
     #   env: BROWSER=firefox
