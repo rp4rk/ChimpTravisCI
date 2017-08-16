@@ -10,9 +10,6 @@ env:
     - ENCRYPTION_LABEL: "ae8e44dcec30"
     - COMMIT_AUTHOR_EMAIL: "ryan.park@unosquare.com"
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_ae8e44dcec30_key -iv $encrypted_ae8e44dcec30_iv -in deploy.enc -out deploy -d
-
 matrix:
   include:
     # - os: linux
