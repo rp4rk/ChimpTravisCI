@@ -11,6 +11,6 @@ module.exports = function() {
     });
 
     this.Then(/^I see pugs$/, () => {
-        assert(true);
+        expect(true).toBeTruthy();
     });
 };
