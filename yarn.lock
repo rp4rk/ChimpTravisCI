@@ -1228,7 +1228,7 @@ cucumber-html-reporter@^2.0.3:
     lodash "^4.17.2"
     open "0.0.5"
 
-"cucumber@github:xolvio/cucumber-js#v1.3.0-chimp.6":
+cucumber@xolvio/cucumber-js#v1.3.0-chimp.6:
   version "1.3.0"
   resolved "https://codeload.github.com/xolvio/cucumber-js/tar.gz/cf953cb5b5de30dbcc279f59e4ebff3aa040071c"
   dependencies:
@@ -1875,6 +1875,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+gh-pages-travis@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gh-pages-travis/-/gh-pages-travis-1.0.4.tgz#b4f918bc6d723fc160d380b0a01167208f8bf8a7"
+
 gherkin@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/gherkin/-/gherkin-4.0.0.tgz#79dce04d1223ea43b4862a76be5ce8f89c12c32c"
@@ -1903,7 +1907,7 @@ glob@7.1.1, glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.0.6:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-"glob@github:lucetius/node-glob#chimp":
+glob@lucetius/node-glob#chimp:
   version "7.1.1"
   resolved "https://codeload.github.com/lucetius/node-glob/tar.gz/51c7ca6e69bfbd17db5f1ea710e3f2a7a457d9ce"
   dependencies:
