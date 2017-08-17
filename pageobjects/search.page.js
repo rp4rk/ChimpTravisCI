@@ -7,7 +7,7 @@ const searchPage = Object.create(page, {
    * define elements
    */
   searchBtn: { get() { return browser.element('.lsb[value="Google Search"]'); } },
-  searchField: { get() { return browser.element('input[name="q"]'); } },
+  searchField: { get() { return browser.element('input[nme="q"]'); } },
   searchResults: { get() { return browser.element('#search'); } },
 
   /**
