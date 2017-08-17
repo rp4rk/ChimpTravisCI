@@ -33,7 +33,8 @@ cache:
 before_script:
 - export DISPLAY=:99.0
 - "./script/travis-build.sh"
-- ./decrypt.sh
+- chmod +x ./decrypt.sh
+- "./decrypt.sh"
 - yarn
 script:
 - node ./node_modules/.bin/chimp ./chimp.conf.js --browser ${BROWSER}
