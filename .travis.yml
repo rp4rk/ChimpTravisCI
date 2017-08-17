@@ -18,6 +18,10 @@ matrix:
     dist: trusty
     sudo: required
     env: BROWSER=firefox
+  - os: linux
+    dist: trusty
+    sudo: required
+    env: BROWSER=chrome
   exclude:
   - node_js: stable
 addons:
