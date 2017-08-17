@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e # Exit with nonzero exit code if anything fails
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
