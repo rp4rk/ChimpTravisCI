@@ -1,16 +1,18 @@
 'use strict';
-import searchPage from '../../pageobjects/search.page';
+import searchPage from '../../pageobjects/term-search.page';
 
 module.exports = function() {
-    this.Given(/^I visit "([^"]*)"$/, url => {
-        browser.url(url);
+    this.Given(/^I am on the google home page$/, () => {
+        searchPage.open();
+    });
+    
+    // Enter term in search: google.js
+
+    this.Given(/^I press the term search button$/, () => {
+        searchPage.pressSearchButton();
     });
 
-    this.Then(/^I enter "([^"]*)" into the search bar$/, phrase => {
-        searchPage.searchFor(phrase);
-    });
-
-    this.Then(/^I see pugs$/, () => {
-        expect(true).toBeFalsy();
+    this.Then(/^I see the results from my term search$/, () => {
+        expect(searchPage.searchResults).toBeTruthy();
     });
 };

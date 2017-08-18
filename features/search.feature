@@ -1,11 +1,12 @@
-Feature: Google search
+Feature: Google Term search
     In order to find new information
     As a user
     I want to search Google
 
     Scenario: Search for pugs
-        Given I visit "https://www.google.co.uk/"
+        Given I am on the google home page
         Then I enter "Pugs" into the search bar
-        Then I see pugs
+        Then I press the term search button
+        Then I see the results from my term search
     
     
